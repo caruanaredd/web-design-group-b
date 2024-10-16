@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+    <style>
+        /* This is a basic CSS reset
+            targeting ALL elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #6b4226;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* This targets all links
+            inside the navigation ONLY */
+        nav a {
+            color: #6b4226;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Classes are targeted with
+            a dot. */
+        .box {
+            border-width: 1px;
+            border-style: solid;
+            border-color: #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #fff4e6;
+            border-color: #d4b49b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Welcome to Our Coffee Shop</h1>
+    </header>
+
+    <!-- Website Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Welcome Box -->
+        <div class="box highlight">
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nemo distinctio iste quis ab voluptatum tempore, accusamus veritatis consequatur incidunt enim laboriosam perspiciatis amet ipsam!</p>
+        </div>
+
+        <!-- Featured Items Box -->
+        <div class="box">
+            <h2>Featured Items</h2>
+            <ul>
+                <li>Espresso - &euro;1.50</li>
+                <li>Capuccino - &euro;2.00</li>
+                <li>Chocolate Cake - &euro;5.00</li>
+                <li>Apple Pie - &euro;3.50</li>
+            </ul>
+        </div>
+
+        <!-- Location Box -->
+        <div class="box">
+            <h2>Location</h2>
+            <p>Door 69, Haha Good Luck Str, Mosta</p>
+        </div>
+    </main>
+</body>
+</html>
