@@ -26,6 +26,8 @@ body {
     background-attachment: fixed;
 
     width: 100vw; /* 100% of the window width */
+    width: auto; /* fixes a scrolling bug */
+    
     height: 100vh; /* 100% of the window height */
 
     display: flex;
@@ -96,4 +98,21 @@ body {
 
     transition-duration: 10s;
     transition-timing-function: linear;
+}
+
+/************** CONTAINER **************/
+.container {
+    max-width: 1280px;
+
+    margin: auto;
+}
+
+/************** GRID LAYOUT **************/
+.row {
+    display: flex;
+    gap: 50px;
+}
+
+.row .card {
+    width: 50%;
 }
