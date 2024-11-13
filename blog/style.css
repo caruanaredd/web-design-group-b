@@ -18,6 +18,18 @@ body {
     min-height: 200vh;
 }
 
+hr {
+    /* Borders in HR elements are rendered in 3D
+        so if we want a clean line, we need to
+        cancel the default border */
+    border: none;
+    border-top: 1px solid #ccc;
+
+    /* !important will prevent this from changing */
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
 /************** INTRO SCREEN **************/
 .intro {
     background-image: url(images/leaves.jpg);
@@ -125,6 +137,10 @@ body {
     gap: 50px;
 }
 
+.one-column .card {
+    width: 100%;
+}
+
 .two-column .card {
     width: calc((100% - 50px) / 2);
 }
@@ -136,6 +152,13 @@ body {
 /************** MAIN CONTENT **************/
 .main-content {
     margin-top: 100px;
+}
+
+.content-narrow {
+    width: 50%;
+    min-width: 640px;
+
+    margin: auto;
 }
 
 .vertical-title {
@@ -247,3 +270,30 @@ body {
 }
 
 /************** STORIES **************/
+.story-header h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.story-header p {
+    font-size: 1.5em;
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+    line-height: 1.2;
+}
+
+.story-header .byline {
+    margin-top: 10px;
+}
+
+/* targets all elements inside class="byline" */
+.story-header .byline * {
+    display: inline;
+
+    font-style: normal;
+}
+
+.story-content p, .story-content .row {
+    margin-top: 50px;
+}
