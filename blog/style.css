@@ -38,6 +38,12 @@ body {
     z-index: 1010;
 }
 
+/* Replace the original intro css */
+.intro-narrow {
+    height: 75vh;
+    z-index: 990;
+}
+
 .intro-container {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -240,3 +246,4 @@ body {
     align-content: center;
 }
 
+/************** STORIES **************/
