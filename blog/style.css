@@ -149,6 +149,10 @@ hr {
     width: calc((100% - 100px) / 3);
 }
 
+.four-column .card {
+    width: calc((100% - 150px) / 4);
+}
+
 /************** MAIN CONTENT **************/
 .main-content {
     margin-top: 100px;
@@ -294,6 +298,69 @@ hr {
     font-style: normal;
 }
 
-.story-content p, .story-content .row {
+/* .story-content > p affects only
+    direct children paragraphs */
+.story-content > p, .story-content .row {
     margin-top: 50px;
+}
+
+.story-footer {
+    background-color: #f0f0f0;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    padding: 100px 50px;
+}
+
+.story-footer p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.keep-reading {
+    background-color: #f4f4f4;
+    /* 50px top/left/right and 0 on the bottom */
+    padding: 50px 50px 0;
+}
+
+/************** SHARING LAYOUT **************/
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    display: block;
+
+    background-color: #e0e0e0;
+
+    margin: 10px;
+    padding: 10px;
+
+    transition-property: background-color;
+    transition-duration: 0.15s;
+}
+
+.social-icon svg {
+    display: block;
+
+    font-size: 20px;
+
+    width: 1em;
+    height: 1em;
+
+    /* changes the fill color of an SVG element */
+    fill: #000;
+
+    transition-property: fill;
+    transition-duration: 0.15s;
+}
+
+.social-icon:hover {
+    background-color: #000;
+}
+
+.social-icon:hover svg {
+    fill: #fff;
 }
